@@ -26,7 +26,7 @@ class Contestant {
       });
   
     }
-    static getPlayerInfo(){
+    static getContestantInfo(){
       var contestantInfoRef=database.ref("contestants")
       contestantInfoRef.on("value",(data)=>{
         allcontestant=data.val();
